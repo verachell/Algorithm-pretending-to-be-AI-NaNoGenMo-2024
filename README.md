@@ -5,7 +5,7 @@ This algorithm is a meld of Markov Chaining and the Cut-Up method mashed togethe
 
 ## Text sources used
 
-The text sources used here, stored in the `Data` folder, are 2 fiction and 2 non-fiction books from Project Gutenberg:
+The default text sources used here, stored in the `Data` folder, are 2 fiction and 2 non-fiction books from Project Gutenberg:
 
 - [Twenty Thousand Leagues Under the Sea by Jules Verne](https://www.gutenberg.org/ebooks/164)
 - [Anne of Green Gables by L.M. Montgomery](https://www.gutenberg.org/ebooks/45)
@@ -24,6 +24,12 @@ Please note: As a prerequisite, this code requires that `ruby` is installed on y
 3. After that, it will generate a story using the text file sources specified in the program, in this case the 4 Project Gutenberg books mentioned above.
 
 4. The story will be written in markdown format to a new file in the same working directory.
+
+### Example output
+You can see 2 examples of output in this repository. They differ in the keywords that were input by the user:
+
+- [Story_bird_prey_7025.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_bird_prey_7025.md) - keywords: bird prey
+- [Story_cold_cool_ice_1363.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_cold_cool_ice_1363.md) keywords: cold cool ice
 
 ## Customizing the program for your needs
 At the start of the file are the constants that you will want to change if you want to customize the behavior of the program:
