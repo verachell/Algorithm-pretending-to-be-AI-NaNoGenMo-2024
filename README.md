@@ -33,6 +33,8 @@ You can see 2 examples of output in this repository. They differ in the keywords
 - [Story_bird_prey_7025.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_bird_prey_7025.md) - keywords: bird prey
 - [Story_cold_cool_ice_1363.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_cold_cool_ice_1363.md) - keywords: cold cool ice
 
+The results are not very coherent, so don't expect anything that reads like a real novel. 
+
 #### If your keywords are not in the source text
 If none of the keywords you type in are present in the source text, the program will inform you of that and it will halt. However, if some of the keywords are present it will continue and it will inform you of which keywords it is using.
 
