@@ -7,24 +7,38 @@ This algorithm is a meld of Markov Chaining and the Cut-Up method mashed togethe
 
 The text sources used here, stored in the `Data` folder, are 2 fiction and 2 non-fiction books from Project Gutenberg:
 
-- Twenty Thousand Leagues Under the Sea by Jules Verne https://www.gutenberg.org/ebooks/164
-- Anne of Green Gables by L.M. Montgomery https://www.gutenberg.org/ebooks/45
-- A Text-book of Astronomy by George C. Comstock https://www.gutenberg.org/ebooks/34834
-- American Rural Highways by 
+- [Twenty Thousand Leagues Under the Sea by Jules Verne](https://www.gutenberg.org/ebooks/164)
+- [Anne of Green Gables by L.M. Montgomery](https://www.gutenberg.org/ebooks/45)
+- [A Text-book of Astronomy by George C. Comstock](https://www.gutenberg.org/ebooks/34834)
+- [American Rural Highways by T.R. Agg](https://www.gutenberg.org/ebooks/29420)
 
 ## Usage - how to run this program
 Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2.
 
-First download the contents of this repository into your working directory. Then open a terminal and at the command line prompt, type `ruby generate_story.rb`
+1. First download the contents of this repository into your working directory. Then open a terminal and at the command line prompt, type `ruby generate_story.rb`
 
-It will prompt you to type in your desired keywords. 
+2. It will prompt you to type in your desired keywords. 
 
-After that, it will generate a story using the text file sources specified in the program, in this case the 4 Project Gutenberg books mentioned above.
+3. After that, it will generate a story using the text file sources specified in the program, in this case the 4 Project Gutenberg books mentioned above.
 
-The story will be written in markdown format to a file in the same working directory.
+4. The story will be written in markdown format to a file in the same working directory.
 
-### Customizing the program for your needs
+## Customizing the program for your needs
+At the start of the file are the constants that you will want to change if you want to customize the behavior of the progra:
+```
+TEXT_SOURCES = ["Data/anne-pg45.txt", "Data/leagues-pg164.txt", "Data/highways-pg29420.txt", "Data/astronomy-pg34834.txt"]
+DESIRED_WORD_COUNT = 50000
+COMMON_WORD_NUM = 1000
+START_WORD_NUM = 400
+END_WORD_NUM = 200
+KW_EXACT_MATCH = true
+```
+You can change text sources to whatever files you want. I recommend no more than 4 books otherwise the algorithm will take a long time to run.
 
+- `COMMON_WORD_NUM` is how many of the most common words you want to use as segmentation boundaries (see algorithm info below). The default above means we segment at each of the 1000 most common words. The smaller this number, the less segmented the text will be and the longer the average segment length will be.
+- `START_WORD_NUM` is how many of the most common words you plan to use that appear at the beginning of sentences. The smaller the number, the less variety you will have in choice of start word of a sentence.
+- `END_WORD_NUM` is how many of the most common words you plan to use that appear at the end of sentences. The larger the number, the shorter your sentences will become, because an end word will be encountered more frequently.
+- `KW_EXACT_MATCH` when set to the default of `true` means you want your keywords to match exactly. For example, if your keyword is `hill`, it will only match `hill` and not `hilly` `chill` or `shilling`. On the other hand, when `KW_EXACT_MATCH` is set to `false`, if your keyword will match anything containing that word. Sometimes this might be desirable, for example if your keyword is `horse` and you want to also match `horses` and `horseback`
 
 ## How the algorithm works
 
