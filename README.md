@@ -7,10 +7,10 @@ This algorithm is a meld of Markov Chaining and the Cut-Up method mashed togethe
 
 The text sources used here, stored in the `Data` folder, are 2 fiction and 2 non-fiction books from Project Gutenberg:
 
-- 
+- Twenty Thousand Leagues Under the Sea by Jules Verne https://www.gutenberg.org/ebooks/164
 - Anne of Green Gables by L.M. Montgomery https://www.gutenberg.org/ebooks/45
-- 
-
+- A Text-book of Astronomy by George C. Comstock https://www.gutenberg.org/ebooks/34834
+- American Rural Highways by 
 
 ## Usage - how to run this program
 Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2.
