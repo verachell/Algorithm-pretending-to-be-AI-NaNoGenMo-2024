@@ -12,6 +12,8 @@ The text sources used here, stored in the `Data` folder, are 2 fiction and 2 non
 - [A Text-book of Astronomy by George C. Comstock](https://www.gutenberg.org/ebooks/34834)
 - [American Rural Highways by T.R. Agg](https://www.gutenberg.org/ebooks/29420)
 
+However, you can change the sources to whatever text you want, as described below in "Customizing the program"
+
 ## Usage - how to run this program
 Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2.
 
@@ -21,10 +23,10 @@ Please note: As a prerequisite, this code requires that `ruby` is installed on y
 
 3. After that, it will generate a story using the text file sources specified in the program, in this case the 4 Project Gutenberg books mentioned above.
 
-4. The story will be written in markdown format to a file in the same working directory.
+4. The story will be written in markdown format to a new file in the same working directory.
 
 ## Customizing the program for your needs
-At the start of the file are the constants that you will want to change if you want to customize the behavior of the progra:
+At the start of the file are the constants that you will want to change if you want to customize the behavior of the program:
 ```
 TEXT_SOURCES = ["Data/anne-pg45.txt", "Data/leagues-pg164.txt", "Data/highways-pg29420.txt", "Data/astronomy-pg34834.txt"]
 DESIRED_WORD_COUNT = 50000
