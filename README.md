@@ -1,6 +1,22 @@
 # Algorithm-pretending-to-be-AI-NaNoGenMo-2024
 Creates > 50000 words of fiction algorithmically using a) text file sources and b) keywords that the user types in
 
+This algorithm is a meld of Markov Chaining and the Cut-Up method mashed together in one algorithm. A more detailed explanation is below.
+
+## Text sources used
+
+## Usage - how to run this program
+Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2.
+
+First download the contents of this repository into your working directory. Then open a terminal and at the command line prompt, type `ruby generate_story.rb`
+
+It will prompt you to type in your desired keywords. After that, it will generate a story based on the text files specified in the program, in this case the 4 Project Gutenberg books mentioned above.
+
+The story will be written in markdown format to a file in the same working directory.
+
+### Customizing the program for your needs
+
+
 ## How the algorithm works
 
 This algorithm is a meld of Markov Chaining and the Cut-Up method mashed together in one algorithm. Cut-Up is when a text is segmented and re-arranged to form new text.
