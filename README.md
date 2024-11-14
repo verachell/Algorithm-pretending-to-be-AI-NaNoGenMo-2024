@@ -15,7 +15,7 @@ The default text sources used here, stored in the `Data` folder, are 2 fiction a
 However, you can change the sources to whatever text you want, as described below in "Customizing the program"
 
 ## Usage - how to run this program
-Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2.
+Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2. Any 3.x of ruby should be fine.
 
 1. First download the contents of this repository into your working directory. Then open a terminal and at the command line prompt, type `ruby generate_story.rb`
 
