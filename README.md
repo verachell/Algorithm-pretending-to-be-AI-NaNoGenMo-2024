@@ -5,12 +5,21 @@ This algorithm is a meld of Markov Chaining and the Cut-Up method mashed togethe
 
 ## Text sources used
 
+The text sources used here, stored in the `Data` folder, are 2 fiction and 2 non-fiction books from Project Gutenberg:
+
+- 
+- Anne of Green Gables by L.M. Montgomery https://www.gutenberg.org/ebooks/45
+- 
+
+
 ## Usage - how to run this program
 Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2.
 
 First download the contents of this repository into your working directory. Then open a terminal and at the command line prompt, type `ruby generate_story.rb`
 
-It will prompt you to type in your desired keywords. After that, it will generate a story based on the text files specified in the program, in this case the 4 Project Gutenberg books mentioned above.
+It will prompt you to type in your desired keywords. 
+
+After that, it will generate a story using the text file sources specified in the program, in this case the 4 Project Gutenberg books mentioned above.
 
 The story will be written in markdown format to a file in the same working directory.
 
