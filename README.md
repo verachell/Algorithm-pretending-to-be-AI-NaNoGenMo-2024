@@ -1,7 +1,7 @@
 # Algorithm-pretending-to-be-AI-NaNoGenMo-2024
 Creates > 50000 words of fiction algorithmically using a) text file sources and b) keywords that the user types in
 
-This algorithm is a meld of Markov Chaining and the Cut-Up method mashed together in one algorithm. A more detailed explanation is below.
+This algorithm is a meld of Markov Chaining and the Cut-Up method mashed together in one algorithm. A more detailed explanation is below in the section [How the algorithm works](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024?tab=readme-ov-file#how-the-algorithm-works)
 
 ## Text sources used
 
@@ -12,7 +12,7 @@ The default text sources used here, stored in the `Data` folder, are 2 fiction a
 - [A Text-book of Astronomy by George C. Comstock](https://www.gutenberg.org/ebooks/34834)
 - [American Rural Highways by T.R. Agg](https://www.gutenberg.org/ebooks/29420)
 
-However, you can change the sources to whatever text you want, as described below in "Customizing the program"
+However, you can change the sources to whatever text you want, as described below in the section [Customizing the program for your needs](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024#customizing-the-program-for-your-needs)
 
 ## Usage - how to run this program
 Please note: As a prerequisite, this code requires that `ruby` is installed on your machine. I used ruby v 3.3.0 to develop this, but have also tested it on v 3.1.2. Any 3.x of ruby should be fine.
