@@ -29,7 +29,7 @@ Please note: As a prerequisite, this code requires that `ruby` is installed on y
 You can see 2 examples of output in this repository. They differ in the keywords that were input by the user:
 
 - [Story_bird_prey_7025.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_bird_prey_7025.md) - keywords: bird prey
-- [Story_cold_cool_ice_1363.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_cold_cool_ice_1363.md) keywords: cold cool ice
+- [Story_cold_cool_ice_1363.md](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024/blob/15428f573f22ba29c61dfbf8044ba07490925874/Example-output/Story_cold_cool_ice_1363.md) - keywords: cold cool ice
 
 ## Customizing the program for your needs
 At the start of the file are the constants that you will want to change if you want to customize the behavior of the program:
@@ -46,7 +46,7 @@ You can change text sources to whatever files you want. I recommend no more than
 - `COMMON_WORD_NUM` is how many of the most common words you want to use as segmentation boundaries (see algorithm info below). The default above means we segment at each of the 1000 most common words. The smaller this number, the less segmented the text will be and the longer the average segment length will be.
 - `START_WORD_NUM` is how many of the most common words you plan to use that appear at the beginning of sentences. The smaller the number, the less variety you will have in choice of start word of a sentence.
 - `END_WORD_NUM` is how many of the most common words you plan to use that appear at the end of sentences. The larger the number, the shorter your sentences will become, because an end word will be encountered more frequently.
-- `KW_EXACT_MATCH` when set to the default of `true` means you want your keywords to match exactly. For example, if your keyword is `hill`, it will only match `hill` and not `hilly` `chill` or `shilling`. On the other hand, when `KW_EXACT_MATCH` is set to `false`, if your keyword will match anything containing that word. Sometimes this might be desirable, for example if your keyword is `horse` and you want to also match `horses` and `horseback`
+- `KW_EXACT_MATCH` when set to the default of `true` means you want your keywords to match exactly. For example, if your keyword is `hill`, it will only match `hill` and not `hilly` `chill` or `shilling`. On the other hand, when `KW_EXACT_MATCH` is set to `false`, your keyword will match anything containing that word. Sometimes this might be desirable, for example if your keyword is `horse` and you want to also match `horses` and `horseback`
 
 ## How the algorithm works
 
@@ -68,3 +68,10 @@ The fragments would become:
 Those fragments then form the basis of a Markov Chain lookup table. Therefore, suppose we randomly start with the fragment `a hamster was`. The next fragment must start with `was`, so the algorithm narrows this down to `was sitting on` and `was running on` - it will pick one of these options randomly, and so on. However, if one of these options contained one of the user keywords, it would pick one of the ones containing the user keyword.
 
 This is a bit different to regular Markov chaining in that the lengths of the fragments in my table will vary. For example, if the original text contains a phrase with several uncommon words in a row, they will wind up all together in 1 fragment, because the text is being cut at the most common words. By contrast, Markov chaining is usually implemented with constant lengths of fragments, typically 2 or 3 words.
+
+### Ruby and operating system software used
+This program was developed using ruby v 3.3.0 on a Raspberry Pi running Debian GNU/Linux 12
+
+This program was also successfully tested on ruby v 3.1.2 on a PC running Windows 11
+
+It has not been tested on an Apple machine
