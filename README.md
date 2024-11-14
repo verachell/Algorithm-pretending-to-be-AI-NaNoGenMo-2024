@@ -3,7 +3,7 @@ Creates > 50000 words of fiction algorithmically using a) text file sources and 
 
 This algorithm is a meld of Markov Chaining and the Cut-Up method mashed together in one algorithm. 
 
-A more detailed explanation is below in the section [How the algorithm works](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024#how-the-algorithm-works)
+A more detailed explanation is below in the section [How the algorithm works](https://github.com/verachell/Algorithm-pretending-to-be-AI-NaNoGenMo-2024?tab=readme-ov-file#how-the-algorithm-works)
 
 ## Text sources used
 
